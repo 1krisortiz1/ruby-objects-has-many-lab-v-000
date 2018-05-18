@@ -17,4 +17,8 @@ class Author
     post.author = self #creates a new post with it and associates the post to the author
   end
 
+  def self.post_count
+    @@post_count
+
+  end
 end
