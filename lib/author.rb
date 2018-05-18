@@ -14,6 +14,7 @@ class Author
   def add_post_by_title(title)
     post = Post.new(title)
     @posts << post
+    post.author = self #creates a new post with it and associates the post to the author
   end
 
 end
